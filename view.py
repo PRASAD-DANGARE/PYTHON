@@ -13,7 +13,7 @@ from numpy import*
 a = arange (1, 6) # It Create Elements From 1 To 5
 b = a.view() # Create a View Of a And Call It b
 
-print('\n Original Array : ', a)
+print('Original Array : ', a)
 print('Newly Array : ', b)
 print("\n")
 
