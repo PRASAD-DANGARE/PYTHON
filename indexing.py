@@ -4,8 +4,8 @@
 Function Name    :  Access Each Elements Of String In Fordward And Reverse Order. 
 Function Date    :  1 Sep 2020
 Function Author  :  Prasad Dangare
-Input            :  Integer
-Output           :  Integer
+Input            :  String
+Output           :  String
 '''
 
 str = 'Core Python'
