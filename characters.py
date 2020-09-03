@@ -2,10 +2,10 @@
 
 '''
 Function Name    :  Identify Types Of Character Entered By Users . 
-Function Date    :  2 Sep 2020
+Function Date    :  3 Sep 2020
 Function Author  :  Prasad Dangare
 Input            :  String
-Output           :  Integer 
+Output           :  String 
 '''
 
 str = input('Enter A Character : ')
