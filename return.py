@@ -2,9 +2,9 @@
 
 '''
 Function Name    :  One Function Returns Two Values . 
-Function Date    :  2 Sep 2020
+Function Date    :  6 Sep 2020
 Function Author  :  Prasad Dangare
-Input            :  String
+Input            :  Integer
 Output           :  Integer 
 '''
 
