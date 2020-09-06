@@ -1,21 +1,22 @@
-# python program A Function That Accepts Two Values Finds Their Sum
+# Python Program To Know How To Define A Function Inside Another Function
 
 '''
-Function Name    :  A Function To Add Two Numbers . 
-Function Date    :  4 Sep 2020
+Function Name    :  Defining A Function Inside Another Function. 
+Function Date    :  6 Sep 2020
 Function Author  :  Prasad Dangare
-Input            :  Integer
-Output           :  Float
+Input            :  String
+Output           :  String 
 '''
 
-def sum(a, b):
-    """ This Function Finds Sum Of Two Numbers """
+def display(str):
+    def message():
+        print("\n")
+        return 'How Are You '
     
-    c = a + b
-    print('\n Sum = ', c)
-    
-# Call The Function
+    result = message()+str
+    return result
 
-sum(10, 15)
-sum(1.5, 10.75) # Call Second Time
+# Call Display() Function
+
+print(display("Prasad"))
 print("\n")
