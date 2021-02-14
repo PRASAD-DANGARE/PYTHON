@@ -1,15 +1,25 @@
 '''
-Description      :  Use Of For Loop  
-Function Date    :  04 Feb 2021
+Description      :  Basic For-Loop 
+Function Date    :  14 Feb 2021
 Function Author  :  Prasad Dangare
 Input            :  Int
 Output           :  Int
 '''
 
-for i in range(1, 5) :
-    
-    print (i)
+def Addition(*Arr):
+    sum = 0
 
-else :
- 
-    print ('The for loop is over')
+    for no in Arr:
+        sum = sum + no
+
+    return sum
+
+def main():
+    ret = Addition(10,20,30,40,50)
+    print("Addition is :", ret)
+
+    ret = Addition(10,20)
+    print("Addition is : ", ret)
+
+if __name__ == "__main__":
+    main()
