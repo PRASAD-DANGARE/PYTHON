@@ -1,23 +1,50 @@
-# Python Program To Test Wether A Number Is Even Or Odd
-
 '''
-Function Name    :  Test Wether A Number Is Even Or Odd. 
-Function Date    :  4 Sep 2020
+Description      :  types of function definations
+Function Date    :  14 Feb 2021
 Function Author  :  Prasad Dangare
-Input            :  Integer
-Output           :  Integer,String
+Input            :  Int
+Output           :  Int
 '''
 
-def even_odd(num):
-    """To Know num Is Even Or Odd"""
-    if num % 2 == 0:
-        print(num, "Is Even")
-        
-    else:
-        
-        print(num, "Is Odd")
-        
-# Call The Function
+# types of function definations
 
-even_odd(12)
-even_odd(13)
+# accepts nothing return nothing
+
+def fun():
+    print("inside fun")
+
+# accepts parameters and return nothing
+
+def gun(value):
+    print("inside gun", value)
+
+# accepts parameters and return the value
+
+def sun(value):
+    value = value + 1 
+    print("inside sun")
+    return value
+
+# empty function
+
+def mun():
+    pass # it give space for now 
+
+# nested function
+
+def outer():
+    print("inside outer")
+    def Inner():
+        print("inside inner")
+    Inner()
+
+def main():
+    fun()
+    gun(11)
+    ret = sun(11)
+    print(ret)
+    mun()
+    outer()
+
+if __name__ == "__main__":
+    main()
