@@ -1,24 +1,26 @@
-# python program To Find Sum Of Two Numbers And Return The Result From Functions
-
 '''
-Function Name    :  Sum Of Two Numbers And Return The Result. 
-Function Date    :  4 Sep 2020
+Description      :  Input In Function By .format Method
+Function Date    :  14 Feb 2021
 Function Author  :  Prasad Dangare
-Input            :  Integer
-Output           :  Integer
+Input            :  Int
+Output           :  Int
 '''
 
-def sum(a, b):
-    """ This Function Finds Sum Of Two Numbers """
-    
-    c = a + b
-    return c # Return Result
-    
-# Call The Function
+# defination of function, use of .format method
 
-x = sum(10, 15)
-print('\n The Sum Is : ', x)
+def Addition(no1, no2):
+    ans = no1 + no2
+    return ans
 
-y = sum(1.5, 10.75)
-print('The Sum Is : ', y)
-print("\n")
+def main():
+    print("enter first number")
+    value1 = int(input())
+
+    print("enter second number")
+    value2 = int(input())
+
+    ret = Addition(value1, value2)
+    print("Addition of {} and {} is {} ".format(value1, value2, ret))
+
+if __name__ == "__main__":
+    main() 
