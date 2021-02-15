@@ -1,20 +1,33 @@
-# Python Program To Access List Elements Using Loops
-
 '''
-Function Name    :  Access List Elements Using Loops.
-Function Date    :  10 Sep 2020
+Description      :  Accept Elements From User And Display The List With, Display Addition Of The List Elements
+Function Date    :  15 Feb 2021
 Function Author  :  Prasad Dangare
-Input            :  Integer
-Output           :  Integer
+Input            :  Int
+Output           :  Int
+
 '''
 
-list = [10,20,30,40,50]
+def Addition(LIST):
+    sum = 0
+    for i in range(len(LIST)):
+        sum = sum + LIST[i]
+    return sum
 
-print('Using While Loop')
-i=0
-while i<len(list): # Repeat From 0 To Length Of List 
-    print(list[i])
-    i=i+1
-print('Using For Loop')
-for i in list: # Repeat For All Elements
-    print(i)
+def main():
+    arr = []
+    print("enter the number elements")
+    size = int(input())
+
+    for i in range(size):
+        print("Enter the elements no : ", i + 1)
+        value = int(input())
+        arr.append(value)
+
+    print("Accepted Data is : ", arr)
+
+    ret = Addition(arr)
+
+    print("Addition of all elements is : ", ret)
+
+if __name__ == "__main__":
+    main()
