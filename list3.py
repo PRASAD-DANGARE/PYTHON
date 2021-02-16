@@ -1,31 +1,53 @@
-# Python Program To Find Common Elements In Two Lists
-
 '''
-Function Name    :  Find Comman Elements In Two List.
-Function Date    :  10 Sep 2020
+Description      :  Demonstration Of List 
+Function Date    :  16 Feb 2021
 Function Author  :  Prasad Dangare
-Input            :  String
-Output           :  String
+Input            :  Hetrogenious elements
+Output           :  --
 '''
 
-# Take Two Lists
+print("Demonstration of List")
+batches = ["PPA","LB","Angular","Python"]
 
-scholar1 = ['Prasad', 'Shubham', 'Hritik', 'Shiva']
-scholar2 = ['Vishal', 'Shiva', 'Prasad', 'Sudarshan']
+print(batches) # ['PPA', 'LB', 'Angular', 'Python']
+print(batches[0]) # PPA
+print(batches[1]) # LB
+print(batches[-1]) # Python
+print(batches[1:]) # ['LB', 'Angular', 'Python']
+print(batches[:3]) # ['PPA', 'LB', 'Angular']
 
-# Convert Them Into Sets
+# we can store heterogenious data
+data1 = [11,"Marvellous",3.14]
+print(data1) # [11, 'Marvellous', 3.14]
 
-s1 = set(scholar1)
-s2 = set(scholar2)
+data2 = [21,"Infosystems",6.10]
+print(data2) # [21, 'Infosystems', 6.1]
 
-# Find Intersection Of Two Sets
+# We can create list of list
+combined = [data1, data2]
+print(combined) # [[11, 'Marvellous', 3.14], [21, 'Infosystems', 6.1]]
 
-s3 = s1.intersection(s2)
+# There are multiple methods that we can use to manipulate list
+batches.append("MEAN")
+print(batches) # ['PPA', 'LB', 'Angular', 'Python', 'MEAN']
 
-# Convert The Resultant Set Into A List
+batches.insert(2,"LSP")
+print(batches) # ['PPA', 'LB', 'LSP', 'Angular', 'Python', 'MEAN']
 
-common = list(s3)
+batches.remove("LSP")
+print(batches) # ['PPA', 'LB', 'Angular', 'Python', 'MEAN']
 
-# Display The List
+batches.pop()
+print(batches) # ['PPA', 'LB', 'Angular', 'Python']
 
-print(common)
+batches.pop(2)
+print(batches) # ['PPA', 'LB', 'Python']
+
+del batches[1:]
+print(batches) # ['PPA']
+
+batches.extend(["LB","Python","Angular","MEAN"])
+print(batches) # ['PPA', 'LB', 'Python', 'Angular', 'MEAN']
+
+batches.sort()
+print(batches) # ['Angular', 'LB', 'MEAN', 'PPA', 'Python']
