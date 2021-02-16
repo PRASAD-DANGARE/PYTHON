@@ -1,18 +1,24 @@
-# Python Program To Accept Elements In The Form Of A Tuple And Display Their Sum And Average
-
 '''
-Function Name    :   Accept Elements In Form Of Tuple And Display Sum, Average.
-Function Date    :  11 Sep 2020
+Description      :  Demonstration Of Tuple 
+Function Date    :  16 Feb 2021
 Function Author  :  Prasad Dangare
-Input            :  String,Integer
-Output           :  String,Integer
+Input            :  Hetrogenious elements
+Output           :  --
 '''
 
-num = eval(input("\n Enter Elements In () : "))
-sum = 0
-n = len(num) # n Is No Of Elements In The Tuple
-for i in range(n): # Repeat i From 0 To n-1
-    sum += num[i] # Add Each Elements To Sum
-print('\n Sum Of Numbers : ', sum) # Display Sum
-print('\n Average Of Numbers : ', sum/n) # Display Average
-print("\n")
+
+print("Demonstration of Tuples")
+tup = (11,"Marvellous",3.14,51,"Infosystems")
+
+print(tup) # (11, 'Marvellous', 3.14, 51, 'Infosystems')
+print(tup[0]) # 11
+print(tup[1]) # Marvellous
+print(tup[1:]) # ('Marvellous', 3.14, 51, 'Infosystems')
+print(tup[:2]) # (11, 'Marvellous')
+print(tup[1:2]) # ('Marvellous',)
+
+# tup[1] = "marvellous" It is not allowed to change the contents
+
+print(len(tup)) # 5
+print("Marvellous" in tup)
+del tup # True
